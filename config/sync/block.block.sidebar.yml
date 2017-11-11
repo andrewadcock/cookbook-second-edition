@@ -1,0 +1,24 @@
+uuid: 19f96b9c-b96a-4b50-ab21-d4b58d5a71df
+langcode: en
+status: true
+dependencies:
+  config:
+    - system.menu.sidebar
+  module:
+    - system
+  theme:
+    - bartik
+id: sidebar
+theme: bartik
+region: sidebar_first
+weight: 0
+provider: null
+plugin: 'system_menu_block:sidebar'
+settings:
+  id: 'system_menu_block:sidebar'
+  label: Sidebar
+  provider: system
+  label_display: visible
+  level: 1
+  depth: 0
+visibility: {  }
