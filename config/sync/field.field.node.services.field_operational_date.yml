@@ -1,0 +1,24 @@
+uuid: 0d5be6ff-72d3-4ce8-8c46-c4d889c65a71
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_operational_date
+    - node.type.services
+  module:
+    - datetime
+id: node.services.field_operational_date
+field_name: field_operational_date
+entity_type: node
+bundle: services
+label: 'Operational Date'
+description: 'This is the date this service became available. Because we beta test these services prior to adding them, the default operational date is 30 days PRIOR to today''s date.'
+required: false
+translatable: false
+default_value:
+  -
+    default_date_type: relative
+    default_date: '-30 days'
+default_value_callback: ''
+settings: {  }
+field_type: datetime

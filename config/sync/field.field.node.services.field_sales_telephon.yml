@@ -1,0 +1,21 @@
+uuid: 97dac7ef-ed56-4251-a4bf-f3c33d2b4b5d
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_sales_telephon
+    - node.type.services
+  module:
+    - telephone
+id: node.services.field_sales_telephon
+field_name: field_sales_telephon
+entity_type: node
+bundle: services
+label: 'Sales Phone Number'
+description: 'Primary phone number for this services sales department'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: telephone
