@@ -1,0 +1,21 @@
+uuid: 5ed9847f-b3a3-4dbd-b6b0-0190c241632e
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_primary_sales_email
+    - node.type.services
+id: node.services.field_primary_sales_email
+field_name: field_primary_sales_email
+entity_type: node
+bundle: services
+label: 'Primary Sales Email'
+description: 'Enter the email address of the primary sales representative for this service.'
+required: true
+translatable: false
+default_value:
+  -
+    value: sales@mycompany.com
+default_value_callback: ''
+settings: {  }
+field_type: email

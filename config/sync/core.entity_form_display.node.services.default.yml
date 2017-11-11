@@ -5,8 +5,11 @@ dependencies:
   config:
     - field.field.node.services.body
     - field.field.node.services.field_marketing_headline
+    - field.field.node.services.field_primary_sales_email
+    - field.field.node.services.field_service_landing_page
     - node.type.services
   module:
+    - link
     - path
     - text
 id: node.services.default
@@ -36,6 +39,22 @@ content:
       placeholder: ''
     third_party_settings: {  }
     type: string_textfield
+    region: content
+  field_primary_sales_email:
+    weight: 124
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: email_default
+    region: content
+  field_service_landing_page:
+    weight: 123
+    settings:
+      placeholder_url: ''
+      placeholder_title: ''
+    third_party_settings: {  }
+    type: link_default
     region: content
   path:
     type: path

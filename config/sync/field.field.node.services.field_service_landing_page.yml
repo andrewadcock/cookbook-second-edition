@@ -1,0 +1,23 @@
+uuid: 54de4a26-5c6c-4504-8f5c-1fc1ffd5d160
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_service_landing_page
+    - node.type.services
+  module:
+    - link
+id: node.services.field_service_landing_page
+field_name: field_service_landing_page
+entity_type: node
+bundle: services
+label: 'Service Landing Page'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  link_type: 17
+  title: 1
+field_type: link

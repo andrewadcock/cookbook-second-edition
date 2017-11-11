@@ -5,8 +5,11 @@ dependencies:
   config:
     - field.field.node.services.body
     - field.field.node.services.field_marketing_headline
+    - field.field.node.services.field_primary_sales_email
+    - field.field.node.services.field_service_landing_page
     - node.type.services
   module:
+    - link
     - text
     - user
 id: node.services.default
@@ -28,6 +31,25 @@ content:
       link_to_entity: false
     third_party_settings: {  }
     type: string
+    region: content
+  field_primary_sales_email:
+    weight: 104
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    type: basic_string
+    region: content
+  field_service_landing_page:
+    weight: 103
+    label: above
+    settings:
+      trim_length: 80
+      url_only: false
+      url_plain: false
+      rel: ''
+      target: ''
+    third_party_settings: {  }
+    type: link
     region: content
   links:
     weight: 100
