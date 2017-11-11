@@ -5,10 +5,13 @@ dependencies:
   config:
     - field.field.node.services.body
     - field.field.node.services.field_marketing_headline
+    - field.field.node.services.field_operational_date
     - field.field.node.services.field_primary_sales_email
+    - field.field.node.services.field_sales_telephon
     - field.field.node.services.field_service_landing_page
     - node.type.services
   module:
+    - datetime
     - link
     - text
     - user
@@ -32,12 +35,29 @@ content:
     third_party_settings: {  }
     type: string
     region: content
+  field_operational_date:
+    weight: 106
+    label: above
+    settings:
+      timezone_override: America/New_York
+      format_type: medium
+    third_party_settings: {  }
+    type: datetime_default
+    region: content
   field_primary_sales_email:
     weight: 104
     label: above
     settings: {  }
     third_party_settings: {  }
     type: basic_string
+    region: content
+  field_sales_telephon:
+    weight: 105
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
     region: content
   field_service_landing_page:
     weight: 103
@@ -54,4 +74,6 @@ content:
   links:
     weight: 100
     region: content
+    settings: {  }
+    third_party_settings: {  }
 hidden: {  }
