@@ -24,6 +24,7 @@ settings:
         -
           name: Links
           items:
+            - Linkit
             - DrupalLink
             - DrupalUnlink
         -
@@ -45,6 +46,8 @@ settings:
       language_list: un
     stylescombo:
       styles: ''
+    linkit:
+      linkit_profile: kitchen_sink
 image_upload:
   status: false
   scheme: public

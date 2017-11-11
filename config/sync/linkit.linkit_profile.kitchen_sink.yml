@@ -1,0 +1,22 @@
+uuid: 4b829a8c-1162-491f-a638-901277d589f1
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+id: kitchen_sink
+label: 'Kitchen Sink'
+description: 'Supports all content types'
+attributes: {  }
+matchers:
+  a1dd6671-73a0-44fa-afef-623e53539800:
+    uuid: a1dd6671-73a0-44fa-afef-623e53539800
+    id: 'entity:node'
+    weight: 0
+    settings:
+      result_description: ''
+      bundles:
+        article: article
+        page: page
+      group_by_bundle: true
+      include_unpublished: false
