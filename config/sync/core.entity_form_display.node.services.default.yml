@@ -4,6 +4,7 @@ status: true
 dependencies:
   config:
     - field.field.node.services.body
+    - field.field.node.services.field_marketing_headline
     - node.type.services
   module:
     - path
@@ -28,6 +29,14 @@ content:
     region: content
     settings: {  }
     third_party_settings: {  }
+  field_marketing_headline:
+    weight: 122
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+    region: content
   path:
     type: path
     weight: 30
