@@ -25,4 +25,10 @@ content:
   links:
     weight: 100
     region: content
-hidden: {  }
+hidden:
+  field_marketing_headline: true
+  field_operational_date: true
+  field_primary_sales_email: true
+  field_related_articles: true
+  field_sales_telephon: true
+  field_service_landing_page: true
