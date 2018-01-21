@@ -3,3 +3,7 @@ services:
     class: Drupal\mymodule\Routing\RouteSubscriber
     tags:
       - { name: event_subscriber }
+  mymodule.request_subscriber:
+    class: Drupal\mymodule\EventSubscriber\RequestSubscriber
+    tags:
+      - { name: event_subscriber }
