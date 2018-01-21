@@ -4,4 +4,4 @@ mymodule.mypage:
     _controller: '\Drupal\mymodule\Controller\MyPageController::customPage'
     _title: 'My custom page'
   requirements:
-    _permission: 'access content'
+    _permission: 'view mymodule pages'
