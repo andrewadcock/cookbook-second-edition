@@ -1,0 +1,16 @@
+<?php
+
+/**
+ * Update contact form to have a reply message
+ */
+
+function mymodule_update_8001() {
+    // Set contact form
+    $contact_form = \Drupal\contact\Entity\ContactForm::load('contactus');
+
+    // Set contact form reply
+    $contact_form->setReply(t('Thank you for contacting us! We will reply shortly'));
+
+    // Save contact form changes
+    $contact_form->save();
+}
