@@ -1,4 +1,4 @@
-uuid: 80d329b3-056b-4243-ab63-34e0d6d9e826
+uuid: a3738f64-9f00-46dd-a15c-eb29b5178b5a
 langcode: en
 status: true
 dependencies:
@@ -48,8 +48,9 @@ display:
           sort_asc_label: Asc
           sort_desc_label: Desc
       pager:
-        type: none
+        type: some
         options:
+          items_per_page: 5
           offset: 0
       style:
         type: html_list
